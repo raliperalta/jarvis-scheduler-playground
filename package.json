@@ -1,0 +1,12 @@
+{
+  "name": "scheduler-test",
+  "version": "1.0.0",
+  "description": "Local test server for Jarvis Scheduler widget",
+  "scripts": {
+    "start": "node server.js",
+    "serve": "npx serve public"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
