@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jarvis Scheduler Test</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      font-family: sans-serif;
+    }
+    button {
+      margin: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+
+  <!-- Jarvis Scheduler Embed -->
+  <script src="https://schedule.jarvisanalytics.com/js/init.min.js"></script>
+
+  <script>
+  let jarvis = new JarvisAnalyticsScheduler({
+    token: "TOKEN",
+    locationId: "LOCATION-ID",
+    companyId: "COMPANY-ID",
+    isOpen: true,
+    // Enable container mode
+    containerMode: true,
+    containerSelector: '#scheduler-container',
+    containerStyles: {
+      position: 'relative',
+      width: '100%',
+      height: '100%',
+    },
+  });
+
+  jarvis.onload(() => {
+    console.log("✅ Widget is fully loaded");
+  });
+</script>
+
+
+</head>
+<body>
+  <div id="scheduler-container" style="width: 800px; height: 900px;">
+</div>
+
+</body>
+</html>
